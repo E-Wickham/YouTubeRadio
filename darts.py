@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 
 import pandas as pd
 
-url = 'https://drumcirclejerk.libsyn.com/dcjpod'
+url = 'https://www.dartsandletters.ca/feed/podcast/'
 
 user_agent = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.7) Gecko/2009021910 Firefox/3.0.7'
 
@@ -48,6 +48,5 @@ for item in items:
     epObj = {'showTitle':showTitle, 'showDesc':showDesc,'showImg':showImage, 'title': title, 'pubDate': pubDate, 'description' : desc, 'url' : epUrl, 'audioDuration': epTime }
     epObj_copy = epObj.copy()
     df.append(epObj_copy)
-    
-
-successMsg ='---- DCJ episode list built'
+ 
+successMsg ='------ Darts and Letters episode list built'

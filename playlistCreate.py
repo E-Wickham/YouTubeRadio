@@ -7,6 +7,8 @@ import harbinger
 import badandb
 import offcourt
 import tech
+import aa
+import darts
 
 import random
 
@@ -19,6 +21,11 @@ print(harbinger.successMsg)
 print(badandb.successMsg)
 print(offcourt.successMsg)
 print(tech.successMsg)
+print(aa.successMsg)
+print(darts.successMsg)
+
+# Print Message
+print("VLC Livestream script initiated")
 
 # Create playlist list to input into VLC
 playlist = []
@@ -26,6 +33,15 @@ playlist = []
 
 for x in range(3):
    
+    aaObj = {
+                'showTitle': aa.df[x]['showTitle'], 
+                'title': aa.df[x]['title'],
+                'url': aa.df[x]['url'],
+                'pubDate' : aa.df[x]['pubDate']
+            }
+    aaObj_copy = aaObj.copy()
+    playlist.append(aaObj_copy)
+
     bbObj = {
                 'showTitle': badandb.df[x]['showTitle'], 
                 'title': badandb.df[x]['title'],
@@ -43,6 +59,15 @@ for x in range(3):
             }
     bstObj_copy = bstObj.copy()
     playlist.append(bstObj_copy)
+
+    dartsObj = {
+                'showTitle': darts.df[x]['showTitle'], 
+                'title': darts.df[x]['title'],
+                'url': darts.df[x]['url'],
+                'pubDate' : darts.df[x]['pubDate']
+            }
+    dartsObj_copy = dartsObj.copy()
+    playlist.append(dartsObj_copy)
 
     dcjObj = {
                 'showTitle': dcj.df[x]['showTitle'], 

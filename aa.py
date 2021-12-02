@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 
 import pandas as pd
 
-url = 'https://drumcirclejerk.libsyn.com/dcjpod'
+url = 'https://albertaadvantage.libsyn.com/rss'
 
 user_agent = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.7) Gecko/2009021910 Firefox/3.0.7'
 
@@ -49,5 +49,5 @@ for item in items:
     epObj_copy = epObj.copy()
     df.append(epObj_copy)
     
+successMsg ='------- Alberta Advantage episode list built'
 
-successMsg ='---- DCJ episode list built'
