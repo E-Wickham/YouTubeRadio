@@ -5,8 +5,6 @@ TAKE BACK THE FIGHT
 import urllib.request
 from bs4 import BeautifulSoup
 
-import pandas as pd
-
 url = 'https://feeds.acast.com/public/shows/take-back-the-fight'
 
 user_agent = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.7) Gecko/2009021910 Firefox/3.0.7'

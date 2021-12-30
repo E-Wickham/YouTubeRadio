@@ -5,7 +5,6 @@ LIBSYN FEED SCRAPER
 import urllib.request
 from bs4 import BeautifulSoup
 
-import pandas as pd
 
 url = 'https://albertaadvantage.libsyn.com/rss'
 
@@ -50,4 +49,3 @@ for item in items:
     df.append(epObj_copy)
     
 successMsg ='------- Alberta Advantage episode list built'
-

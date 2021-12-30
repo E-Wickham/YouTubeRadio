@@ -6,8 +6,6 @@ TRANSISTOR FEED SCRAPER
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 
-import pandas as pd
-
 url = 'https://feeds.transistor.fm/haus-of-decline'
 
 headers = {

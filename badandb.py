@@ -6,7 +6,6 @@ BAD AND BITCHY PODCAST
 import urllib.request
 from bs4 import BeautifulSoup
 
-import pandas as pd
 
 url = 'https://feed.podbean.com/badandbpod/feed.xml'
 
